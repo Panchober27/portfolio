@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+const styles = {
+  iframeframe: {
+    pointerEvents: "none",
+    tabIndex: -1,
+  },
+};
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div>
+        <h2>New Portfolio!</h2>
+
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Hi im working on my new portfolio. I will be including new features to
+          it soon.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        
+        <div style={styles.iframeframe}>
+          <iframe
+            src="https://giphy.com/embed/dXavF0qnux9vNtNHfc"
+            width="480"
+            height="366"
+            frameBorder="0"
+            class="giphy-embed"
+            allowFullScreen
+          ></iframe>
+        </div>
     </div>
   );
 }
